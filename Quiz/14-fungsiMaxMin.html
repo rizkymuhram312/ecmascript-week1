@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <script>
+            let max = 0;
+            let min = 0;
+            let n = Number(prompt("Masukan angka [0 untuk keluar]"));
+            while(n !== -99){
+                if (n>max){
+                    max = n;
+                }
+                if (n<min){
+                    min = n;
+                }
+                n = Number(prompt("Masukan angka? [0 untuk keluar] :"));
+            }
+            alert("Angka Terbesar adalah "+max);
+            alert("Angka Terbesar adalah "+min);
+        </script>
+    </body>
+</html>
