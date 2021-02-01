@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+            init = 0;
+            angkaAcak = Math.floor(Math.random()*20);;
+
+            n= Number(prompt("Tebak Angka"));
+            while (n !== angkaAcak){
+                if( n<angkaAcak){
+                    n = Number(prompt("Salah, Angka terlalu kecil"));
+
+                }
+                else if(n > angkaAcak){
+                    n = Number(prompt("Salah, Angka terlalu besar"));
+
+                }
+            }
+            alert("Kamu Benar, angkanya adalah "+angkaAcak);
+        </script>
+    </body>
+</html>
