@@ -42,7 +42,7 @@ for (const key of list){
     console.log(key); //hasilnya jadi berurutan
 }
 
-//foreach
-list.forEach(element -> {
+//foreach //error
+list.forEach(element => {
     console.log(element);
 })
