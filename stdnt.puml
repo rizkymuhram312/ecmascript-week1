@@ -1,0 +1,49 @@
+@startuml classdigram-msh
+
+class student{
+    +No: Number
+    +Fullname : String
+    +City : String
+    +Education : String
+    +Grade : Number
+    +Type() : String
+    +TotalType() : Number
+
+    
+    
+
+}
+
+class bootcamp extends student{
+    +Bootcamp : String
+    +Batch : Number
+    +Year : Number
+    +Skill Point : Number
+    +Price : Number
+    +Intensif : Number
+    +NetPrice() : Number
+}
+
+class Main {
+    Main()
+}
+
+interface APIsummary{
+    +TotalSiswa(listStudent) : Number
+    +TotalBeasiswa(listBeasiswa) : Number
+    +TotalReguler(listReguler) : Number
+    +UangSaku() : Number
+    +TotalBoot(listBootcamp) : Number
+    +TotalPrice(price):Number
+
+
+
+}
+
+Main -> student
+Main -> bootcamp
+Main -> APIsummary
+APIsummary -> student
+APIsummary -> bootcamp
+
+@enduml

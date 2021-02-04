@@ -5,6 +5,9 @@ export default class Car{
         this.tahun = tahun;
         Car.totalCar++;
     }
+    sayHI(say){
+        return "car"+say;
+    }
 }
 
 export class Taxi extends Car{
@@ -12,9 +15,9 @@ export class Taxi extends Car{
         super(merk,tahun); //=super.merk = merk, super.tahun = tahun
         this.brand = brand;
     }
-Taxi(brand){
+    Taxi(brand){
     this.brand =brand;
-}
+    }
 
     totalRevenue(rate,km){
         return rate * km;
@@ -22,6 +25,10 @@ Taxi(brand){
 
     info(){
         return console.log(this);
+    }
+
+    sayHI(){
+        super.sayHi("TEST");
     }
 }
 

@@ -1,8 +1,8 @@
 {
   "name": "bootcampjs",
   "version": "1.0.0",
-  "description": "Class Car",
-  "main": "08-main.js",
+  "description": "Quiz Student",
+  "main": "quiz-main.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
