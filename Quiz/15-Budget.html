@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <script>
+            let budgetBulan = 0;
+            let cost = 1;
+            let inputCost = 0;
+            let inputBudget = Number(prompt("Masukan Budget Bulanan = "));
+            let budget = inputBudget;
+
+            
+
+            while (inputCost !== -1){
+                inputCost = Number(prompt("Masukan Biaya : (-1 Untuk Keluar)"));
+                cost += inputCost;
+            }
+            let sisa = budget - cost;
+            alert("Total Cost = "+cost+", Sisa budget adalah = "+sisa );
+        </script>
+    </body>
+</html>

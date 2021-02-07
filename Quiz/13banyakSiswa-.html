@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+            let max =0;
+            let i =1;
+            let jumlah = 0;
+
+            while(i <= 8){
+                let nilai = Number(prompt("Masukan Nilai Siswa ke-"+i+":")) ;
+                if(max < nilai){
+                    max = nilai;
+                }
+                if(nilai >= 90){
+                    jumlah++;
+                }
+                i++;
+            }
+            alert("Nilai terbesar adalah "+ max +" dan jumlah siswa yg memilikiki nilai lebih dari 90 yaitu "+jumlah+"orang");
+        </script>
+    </body>
+</html>

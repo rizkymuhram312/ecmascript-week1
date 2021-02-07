@@ -2,8 +2,9 @@
     <body>
         <script>
             let max = 0;
-            let min = 0;
             let n = Number(prompt("Masukan angka [0 untuk keluar]"));
+            let min = n;
+            
             while(n !== -99){
                 if (n>max){
                     max = n;
@@ -14,7 +15,7 @@
                 n = Number(prompt("Masukan angka? [0 untuk keluar] :"));
             }
             alert("Angka Terbesar adalah "+max);
-            alert("Angka Terbesar adalah "+min);
+            alert("Angka Terkecil adalah "+min);
         </script>
     </body>
 </html>
